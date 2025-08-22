@@ -1,7 +1,7 @@
 import unittest
 
 from textnode import TextNode, TextType # type: ignore
-from main import text_node_to_html_node
+from inline import text_node_to_html_node # type: ignore
 
 
 class TestTextNode(unittest.TestCase):
@@ -78,6 +78,8 @@ class TestTesttoHTMLNode(unittest.TestCase):
         with self.assertRaises(Exception):
             node = TextNode("oops", None)
             text_node_to_html_node(node)
+
+
 
 if __name__ == "__main__":
     unittest.main()
