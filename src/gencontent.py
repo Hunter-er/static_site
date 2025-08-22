@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-from blocks import markdown_to_html_node
+from blocks import markdown_to_html_node # type: ignore
 
 
 def generate_pages_recursive(dir_path_content, template_path, dest_dir_path, basepath):
